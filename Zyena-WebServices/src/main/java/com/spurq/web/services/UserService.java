@@ -53,7 +53,7 @@ public Response insertData(User user) {
   	{
 		return Response.status(204).build();
 	} else {
-		return Response.status(404).entity("Podcast with the id " + user.getUserId() + " is not present in the database").build();
+		return Response.status(404).entity("User with the id " + user.getUserId() + " is not present in the database").build();
 	}
   
 }
@@ -68,7 +68,7 @@ public Response insertData(User user) {
 	  	{
 			return Response.status(204).build();
 		} else {
-			return Response.status(404).entity("Podcast with the id " + user.getUserId() + " is not present in the database").build();
+			return Response.status(404).entity("User with the id " + user.getUserId() + " is not present in the database").build();
 		}
 	  
 	 }
@@ -87,7 +87,7 @@ public Response insertData(User user) {
 	  	{
 			return Response.status(204).build();
 		} else {
-			return Response.status(404).entity("Podcast with the id " + id + " is not present in the database").build();
+			return Response.status(404).entity("User with the id " + id + " is not present in the database").build();
 		}
 	  
 	 }
